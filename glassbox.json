@@ -1,0 +1,115 @@
+{
+  "slug": "qrcodeclear",
+  "box": 224,
+  "date": "2026-11-21",
+  "title": "QRCodeClear",
+  "question": "How does a QR code work?",
+  "hook": "A QR code is a tiny page of text, a repair kit and three squares that say where to look. Build one, scratch it and watch a real scanner read it.",
+  "thumbText": "HOW QR CODES WORK",
+  "field": "computing",
+  "minutes": 12,
+  "tags": [
+    "qr code",
+    "barcode",
+    "error correction",
+    "reed-solomon",
+    "computer vision",
+    "encoding"
+  ],
+  "explainer": [
+    {
+      "title": "Squares are bits",
+      "text": "A QR code is a grid of dark and light squares called modules. Each one is a single bit. Version 1 is 21 by 21, and each version adds 4 squares a side, up to 177 by 177 at version 40."
+    },
+    {
+      "title": "Three squares say where to look",
+      "text": "The big squares in three corners show a dark, light, dark, light, dark pattern in the ratio 1 : 1 : 3 : 1 : 1. It looks the same along any line through the middle, so a camera can spot it at any angle. Timing stripes and alignment targets help it count and straighten the grid."
+    },
+    {
+      "title": "Text becomes bytes, then a zig-zag",
+      "text": "The encoder packs your text as digits, capital letters or bytes, pads it, adds check bytes, and lays the bits into the grid two columns at a time. A fixed mask then flips some squares so there are no big blank patches or false finder patterns."
+    },
+    {
+      "title": "It repairs itself",
+      "text": "Reed-Solomon check bytes let a reader find and fix wrong bytes. The four levels, L, M, Q and H, can repair roughly 7, 15, 25 and 30 percent of the code. That is why a scratch, or a small logo in the middle, does not stop it reading."
+    },
+    {
+      "title": "A phone reads it in four steps",
+      "text": "It turns the picture black and white, hunts for the three finder squares, straightens the tilt with a perspective transform, and samples the middle of every module once. Then the decoder fixes any wrong bytes and reads the text."
+    },
+    {
+      "title": "It only holds text",
+      "text": "A code can't run anything by itself. It holds a web address, a Wi-Fi password or a phone number. Fake stickers pasted over real codes, called quishing, work by sending you to the wrong address, so read the address before you tap."
+    }
+  ],
+  "concepts": [
+    {
+      "term": "Module",
+      "def": "One square of a QR code, dark or light. It is one bit."
+    },
+    {
+      "term": "Version",
+      "def": "The size of the code, from 1 (21 × 21) to 40 (177 × 177). Size is 17 + 4 × version."
+    },
+    {
+      "term": "Finder pattern",
+      "def": "The 7 × 7 nested square in three corners. Its 1 : 1 : 3 : 1 : 1 ratio lets a camera find the code at any angle."
+    },
+    {
+      "term": "Timing pattern",
+      "def": "A row and a column of alternating modules between the finders, used to count the grid."
+    },
+    {
+      "term": "Alignment pattern",
+      "def": "A small 5 × 5 target in codes from version 2 up that helps fix perspective and bending."
+    },
+    {
+      "term": "Quiet zone",
+      "def": "The blank border around the code, at least 4 modules wide, so the reader can tell where it ends."
+    },
+    {
+      "term": "Mode",
+      "def": "How characters are packed into bits: numeric, alphanumeric or byte."
+    },
+    {
+      "term": "Mask",
+      "def": "One of 8 fixed patterns of flipped modules that breaks up blank patches and look-alike finders. The best of 8 is chosen."
+    },
+    {
+      "term": "Reed-Solomon code",
+      "def": "A way to add check bytes so a receiver can find and fix wrong bytes without a resend."
+    },
+    {
+      "term": "Error correction level",
+      "def": "L, M, Q or H: how many check bytes the code carries, roughly 7, 15, 25 or 30 percent of its bytes."
+    },
+    {
+      "term": "Quishing",
+      "def": "Phishing through a QR code: a fake code sends you to a page that steals logins or card numbers."
+    }
+  ],
+  "links": {},
+  "storage": [
+    {
+      "key": "qrcodeclear.v1",
+      "what": "Which chapters you have opened, your best quiz scores, and sound on or off."
+    }
+  ],
+  "credits": [
+    {
+      "name": "three.js",
+      "license": "MIT",
+      "url": "https://threejs.org"
+    },
+    {
+      "name": "Geist, Instrument Serif",
+      "license": "SIL OFL 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    {
+      "name": "QR Code is a registered trademark of Denso Wave Incorporated. The encoder, decoder and scanner here are original code.",
+      "license": "Trademark notice",
+      "url": "https://www.qrcode.com/en/faq.html"
+    }
+  ]
+}

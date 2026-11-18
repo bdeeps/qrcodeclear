@@ -1,0 +1,954 @@
+{
+  "title": "The history of the QR code",
+  "tagline": "From a grocery bar code patented in 1949 to a Toyota supplier's square that your phone reads in an instant.",
+  "intro": "A bar code can hold about a dozen digits. By the 1990s, factories needed far more, and they needed it read fast. A small team at Denso found a pattern that almost never turns up by chance, added error correction from a 1960 paper, and gave the idea away. Phones with cameras then did the rest.",
+  "eras": [
+    {
+      "id": "bars",
+      "name": "Bars and the maths of repair",
+      "from": 1949,
+      "to": 1991,
+      "color": "#c49bff",
+      "summary": "Bar codes are patented in 1949 and first scanned at a till in 1974. Reed and Solomon show how to repair lost data."
+    },
+    {
+      "id": "stack",
+      "name": "Stacked and 2D codes",
+      "from": 1987,
+      "to": 1992,
+      "color": "#ffb547",
+      "summary": "Engineers stack rows of bars and add dots, aiming for more data in less space."
+    },
+    {
+      "id": "qr",
+      "name": "A code for car parts",
+      "from": 1992,
+      "to": 2000,
+      "color": "#7dffb0",
+      "summary": "Denso's small team finds the 1:1:3:1:1 pattern and releases the QR Code in 1994. It becomes a standard by 2000."
+    },
+    {
+      "id": "phone",
+      "name": "The camera phone",
+      "from": 2002,
+      "to": 2017,
+      "color": "#8ef0ff",
+      "summary": "Phones read QR codes, new versions appear, and payment apps spread them."
+    },
+    {
+      "id": "everywhere",
+      "name": "Everywhere, for better and worse",
+      "from": 2020,
+      "to": 2026,
+      "color": "#ff7a59",
+      "summary": "Pandemic check-ins, bank payments and Super Bowl ads. Also scams that hide behind a square."
+    }
+  ],
+  "events": [
+    {
+      "year": 1949,
+      "date": "20 October 1949",
+      "era": "bars",
+      "art": "scroll",
+      "key": true,
+      "title": "Two students patent the bar code",
+      "who": "Norman Joseph Woodland and Bernard Silver",
+      "where": "Philadelphia, USA",
+      "country": "United States",
+      "text": "Silver overheard a grocery executive ask for a way to read product data at checkout. He told Woodland, and they worked on the idea. They filed a patent on 20 October 1949. It covered both lines and a bull's-eye pattern of rings.",
+      "why": "It was the first patent for a machine-readable bar code.",
+      "sources": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "year": 1952,
+      "date": "7 October 1952",
+      "era": "bars",
+      "art": "scroll",
+      "title": "The patent is granted, then sold",
+      "who": "Woodland and Silver",
+      "where": "Washington, DC, USA",
+      "country": "United States",
+      "text": "US Patent 2,612,994, \"Classifying Apparatus and Method\", was issued on 7 October 1952. The two men sold it that year to Philco for $15,000. Philco then sold it to RCA.",
+      "why": "The idea was ready long before lasers and computers could use it.",
+      "sources": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "year": 1960,
+      "date": "1960",
+      "era": "bars",
+      "art": "chip",
+      "key": true,
+      "title": "Reed and Solomon invent a way to repair data",
+      "who": "Irving Reed and Gustave Solomon",
+      "where": "Lexington, Massachusetts, USA",
+      "country": "United States",
+      "text": "In 1960 Irving Reed and Gustave Solomon, both at MIT Lincoln Laboratory, published a paper called \"Polynomial Codes over Certain Finite Fields\". It showed how to add extra check symbols so a reader can rebuild lost ones. The same maths later helped protect Voyager's data, music CDs and QR codes.",
+      "why": "Without it, a scratched or smudged QR code would simply fail.",
+      "box": "errors",
+      "sources": [
+        33,
+        14,
+        15,
+        16,
+        4
+      ]
+    },
+    {
+      "year": 1973,
+      "date": "1973",
+      "era": "bars",
+      "art": "gear",
+      "title": "IBM's stripes win the grocery contest",
+      "who": "George Laurer",
+      "where": "Research Triangle Park, North Carolina, USA",
+      "country": "United States",
+      "text": "The grocery industry asked for a standard symbol. IBM engineer George Laurer found that the bull's-eye design smeared when printed. He proposed straight vertical stripes instead. IBM's design was chosen in 1973.",
+      "why": "A bar code that printers could make cleanly could finally be used on every product.",
+      "sources": [
+        17,
+        18,
+        20
+      ]
+    },
+    {
+      "year": 1974,
+      "date": "26 June 1974",
+      "era": "bars",
+      "art": "scroll",
+      "key": true,
+      "title": "The first product is scanned",
+      "who": "Marsh Supermarket staff",
+      "where": "Troy, Ohio, USA",
+      "country": "United States",
+      "text": "At about 8 a.m. on 26 June 1974, a pack of Wrigley's Juicy Fruit gum was scanned at a Marsh supermarket. It was the first retail sale rung up by reading a UPC.",
+      "why": "Scanning proved that bars could run a real shop, and it made people want codes that held more.",
+      "sources": [
+        17,
+        19,
+        18
+      ]
+    },
+    {
+      "year": 1987,
+      "date": "1987",
+      "era": "stack",
+      "art": "window",
+      "title": "Code 49 stacks bar codes in rows",
+      "who": "David Allais",
+      "where": "USA",
+      "country": "United States",
+      "text": "David Allais of Intermec built Code 49 in 1987, with a patent in 1988. It stacked short rows of bars to hold a lot of data on a small label. It saw little use, but it opened the way to 2D codes.",
+      "why": "It showed that a code could carry data both across and down.",
+      "sources": [
+        21,
+        7
+      ]
+    },
+    {
+      "year": 1987,
+      "date": "1987",
+      "era": "stack",
+      "art": "window",
+      "title": "MaxiCode serves UPS",
+      "who": "Donald Chandler and Eric Batterman",
+      "where": "USA",
+      "country": "United States",
+      "text": "United Parcel Service created MaxiCode to track parcels. It is about a one-inch square with a central bull's-eye and dots on a hexagonal grid. It holds about 93 characters.",
+      "why": "Another answer to the same problem: tracking boxes with more than a few digits.",
+      "sources": [
+        23
+      ]
+    },
+    {
+      "year": 1991,
+      "date": "1991",
+      "era": "stack",
+      "art": "window",
+      "title": "PDF417 stacks rows of bars",
+      "who": "Ynjiun P. Wang",
+      "where": "USA",
+      "country": "United States",
+      "text": "Ynjiun Wang at Symbol Technologies devised PDF417. Each pattern has four bars and four spaces in 17 units of width, which gives the name. A symbol has 3 to 90 rows. It is used on boarding passes and US driver licences.",
+      "why": "A stacked code that ordinary laser scanners can read.",
+      "sources": [
+        22
+      ]
+    },
+    {
+      "year": 1992,
+      "date": "c. 1992",
+      "era": "qr",
+      "art": "pixels",
+      "key": true,
+      "title": "A small team at Denso starts work",
+      "who": "Masahiro Hara",
+      "where": "Japan",
+      "country": "Japan",
+      "text": "Hara worked at Denso, a Toyota supplier. Factories needed to track parts and kanban slips, and ordinary bar codes held little data. Hara had been inspired by Allais's 2D codes. In 1992 he began a project to build a code that held more and read faster. His team was tiny: Hara and one other person.",
+      "why": "The aim was practical: stop workers scanning many bar codes on one box.",
+      "box": "anatomy",
+      "sources": [
+        0,
+        7,
+        10
+      ]
+    },
+    {
+      "year": 1992,
+      "date": "c. 1992",
+      "era": "qr",
+      "art": "word",
+      "title": "A board game and a skyscraper shape the design",
+      "who": "Masahiro Hara",
+      "where": "Japan",
+      "country": "Japan",
+      "text": "IEEE Spectrum reports that Hara drew on the board game Go, where pieces sit on a grid. He also noticed a tall building that stood out from its surroundings, and wanted a symbol that stood out too.",
+      "why": "Everyday sights, not lab ideas, shaped the pattern.",
+      "sources": [
+        7
+      ]
+    },
+    {
+      "year": 1993,
+      "date": "c. 1992–1994",
+      "era": "qr",
+      "art": "focus",
+      "key": true,
+      "title": "The 1:1:3:1:1 finder pattern is found",
+      "who": "The Denso team",
+      "where": "Japan",
+      "country": "Japan",
+      "text": "Hara looked for a black-and-white ratio that would mark a code clearly. IEEE says that after three months he found 1:1:3:1:1. Squares with that ratio mark three corners. Denso Wave says the code can be read from any direction, 360 degrees.",
+      "why": "A scanner can find a code in a messy scene and read it fast, from any angle.",
+      "box": "scan",
+      "sources": [
+        0,
+        7,
+        37
+      ]
+    },
+    {
+      "year": 1994,
+      "date": "1994",
+      "era": "qr",
+      "art": "pixels",
+      "key": true,
+      "title": "Denso Wave announces the QR Code",
+      "who": "Denso Wave",
+      "where": "Japan",
+      "country": "Japan",
+      "text": "After about a year and a half of trial and error, the team announced the QR Code in 1994. QR means quick response. It held about 7,000 numerals and kanji, and could be read more than ten times faster than other codes, says Denso Wave.",
+      "why": "The first code built for speed of reading and for Japanese text.",
+      "box": "anatomy",
+      "sources": [
+        0,
+        10
+      ]
+    },
+    {
+      "year": 1995,
+      "date": "mid-1990s onward",
+      "era": "qr",
+      "art": "gear",
+      "title": "Cars, food and medicine adopt it",
+      "who": "Denso Wave and its customers",
+      "where": "Japan",
+      "country": "Japan",
+      "text": "Car makers used QR codes for electronic kanban. Food, drug and contact lens firms used them for tracing products. Denso Wave published the specification so anyone could use it. It kept its patent but said it would not enforce it.",
+      "why": "Open rules made QR a shared tool, not a product to license.",
+      "sources": [
+        0,
+        1,
+        6
+      ]
+    },
+    {
+      "year": 1997,
+      "date": "October 1997",
+      "era": "qr",
+      "art": "scroll",
+      "title": "AIM adopts the standard",
+      "who": "AIM",
+      "where": "USA",
+      "country": "United States",
+      "text": "In October 1997 the QR Code was approved as an AIM standard for automatic identification. Later steps were JEIDA-55 in March 1998 and JIS X 0510 in January 1999.",
+      "why": "Standards let different companies print and read the same code.",
+      "sources": [
+        1,
+        0
+      ]
+    },
+    {
+      "year": 1999,
+      "date": "January 1999",
+      "era": "qr",
+      "art": "scroll",
+      "title": "Japan makes it a national standard",
+      "who": "Japanese Industrial Standards Committee",
+      "where": "Japan",
+      "country": "Japan",
+      "text": "JIS X 0510 was published in January 1999. Denso Wave also waived its rights under Patent No. 2938338 for standardised QR codes.",
+      "why": "Anyone could now make and read QR codes without paying a fee.",
+      "sources": [
+        1,
+        0
+      ]
+    },
+    {
+      "year": 2000,
+      "date": "June 2000",
+      "era": "qr",
+      "art": "scroll",
+      "key": true,
+      "title": "ISO/IEC 18004 makes it international",
+      "who": "ISO and IEC",
+      "where": "Geneva, Switzerland",
+      "country": "Switzerland",
+      "text": "ISO/IEC 18004:2000 defined Model 1 and Model 2 symbols. Model 1 stops at version 14, 73 by 73 modules, with 1,167 numerals. Model 2 goes to version 40, 177 by 177, with 7,089 numerals. Model 2 adds alignment patterns so that bent or tilted codes still read.",
+      "why": "Version 40 is the same size to this day, about 4 more modules per side with each version.",
+      "box": "encode",
+      "sources": [
+        1,
+        2,
+        5,
+        9
+      ]
+    },
+    {
+      "year": 2002,
+      "date": "August 2002",
+      "era": "phone",
+      "art": "phone",
+      "key": true,
+      "title": "A phone reads a QR code for the first time",
+      "who": "Sharp for J-Phone",
+      "where": "Japan",
+      "country": "Japan",
+      "text": "The Sharp J-SH09 went on sale in August 2002 for J-Phone, now SoftBank. It is reported as the first phone with a built-in QR reader. Denso Wave says mass use in Japan began in 2002 with phones that had readers.",
+      "why": "QR codes left the factory and joined everyday life.",
+      "box": "scan",
+      "sources": [
+        24,
+        0
+      ]
+    },
+    {
+      "year": 2004,
+      "date": "November 2004",
+      "era": "phone",
+      "art": "pixels",
+      "title": "Micro QR shrinks the code",
+      "who": "Denso Wave",
+      "where": "Japan",
+      "country": "Japan",
+      "text": "Micro QR has one finder pattern instead of three. Its four sizes run from 11 by 11 to 17 by 17 modules. The largest holds at most 35 numerals. It became part of JIS X 0510 in November 2004.",
+      "why": "A code for tiny parts, where a full QR code would not fit.",
+      "box": "anatomy",
+      "sources": [
+        3,
+        1
+      ]
+    },
+    {
+      "year": 2006,
+      "date": "2006 and 2015",
+      "era": "phone",
+      "art": "scroll",
+      "title": "The standard is revised",
+      "who": "ISO and IEC",
+      "where": "Geneva, Switzerland",
+      "country": "Switzerland",
+      "text": "Wikipedia lists ISO/IEC 18004:2006, which defines QR Code 2005. In 2015 the name went back to plain QR Code. A 2024 edition is now listed as the current one.",
+      "why": "The standard is kept up to date as uses change.",
+      "sources": [
+        9
+      ]
+    },
+    {
+      "year": 2008,
+      "date": "2008",
+      "era": "phone",
+      "art": "pixels",
+      "title": "Denso Wave releases iQR Code",
+      "who": "Denso Wave",
+      "where": "Japan",
+      "country": "Japan",
+      "text": "Denso Wave released the iQR Code in 2008, says its history page.",
+      "why": "The QR family kept growing.",
+      "sources": [
+        0
+      ]
+    },
+    {
+      "year": 2011,
+      "date": "2011",
+      "era": "phone",
+      "art": "phone",
+      "title": "QR codes become a way to pay in China",
+      "who": "Alipay",
+      "where": "China",
+      "country": "China",
+      "text": "Wikipedia says that Alipay designed its QR payment method in 2011. It also says that by 2018 about 83% of payments in China were mobile. These figures come from a secondary page.",
+      "why": "Payment was the use that put QR codes in front of billions of people.",
+      "sources": [
+        9
+      ]
+    },
+    {
+      "year": 2012,
+      "date": "2012",
+      "era": "phone",
+      "art": "scroll",
+      "title": "A design prize for the QR code",
+      "who": "Good Design Award",
+      "where": "Japan",
+      "country": "Japan",
+      "text": "The QR Code won a Good Design Award in 2012, in the Media for Industry category, says Denso Wave.",
+      "why": "The design of the code was honoured, not only its use.",
+      "sources": [
+        0
+      ]
+    },
+    {
+      "year": 2014,
+      "date": "17 June 2014",
+      "era": "phone",
+      "art": "trophy",
+      "title": "The team wins a European prize",
+      "who": "Hara, Watabe, Nojiri, Nagaya and Uchiyama",
+      "where": "Berlin, Germany",
+      "country": "Germany",
+      "text": "The QR Code team won the Popular Prize at the European Inventor Award on 17 June 2014. They were the first Japanese winners. Two of the team worked at Toyota Central R&D Labs.",
+      "why": "Credit for a shared invention reached a wider public.",
+      "sources": [
+        8
+      ]
+    },
+    {
+      "year": 2014,
+      "date": "2014",
+      "era": "phone",
+      "art": "pixels",
+      "title": "Denso Wave introduces Frame QR",
+      "who": "Denso Wave",
+      "where": "Japan",
+      "country": "Japan",
+      "text": "Denso Wave introduced Frame QR in 2014, says its history page.",
+      "why": "The QR family kept growing.",
+      "sources": [
+        0
+      ]
+    },
+    {
+      "year": 2016,
+      "date": "September 2016",
+      "era": "phone",
+      "art": "phone",
+      "title": "India's central bank launches BharatQR",
+      "who": "Reserve Bank of India",
+      "where": "India",
+      "country": "India",
+      "text": "Wikipedia says that India's central bank, the RBI, launched BharatQR in September 2016. This rests on a secondary page.",
+      "why": "Another country moved payments to QR codes.",
+      "sources": [
+        9
+      ]
+    },
+    {
+      "year": 2017,
+      "date": "5 June 2017",
+      "era": "phone",
+      "art": "phone",
+      "key": true,
+      "title": "The iPhone camera reads QR codes",
+      "who": "Apple",
+      "where": "Cupertino, USA",
+      "country": "United States",
+      "text": "Beta users found that the Camera app in iOS 11 read QR codes on 5 June 2017, with no extra app. Apple's guide now says the Camera app can scan them. On 4 October 2017 Google Lens arrived with the Pixel 2, and it can read QR codes too.",
+      "why": "Scanning no longer needed an app, so anyone could do it.",
+      "box": "scan",
+      "sources": [
+        25,
+        36,
+        26
+      ]
+    },
+    {
+      "year": 2020,
+      "date": "2020",
+      "era": "everywhere",
+      "art": "earth",
+      "key": true,
+      "title": "QR codes help fight a pandemic",
+      "who": "Singapore Ministry of Health",
+      "where": "Singapore",
+      "country": "Singapore",
+      "text": "In 2020 Singapore's SafeEntry used venue QR codes for check-in. From 3 July 2020 the TraceTogether app could scan them. Restaurants also moved menus to QR codes in many countries.",
+      "why": "Contact tracing and menus pushed QR codes into daily life.",
+      "box": "trust",
+      "sources": [
+        27,
+        9
+      ]
+    },
+    {
+      "year": 2020,
+      "date": "November 2020",
+      "era": "everywhere",
+      "art": "phone",
+      "title": "Pix brings QR payments to Brazil",
+      "who": "Banco Central do Brasil",
+      "where": "Brazil",
+      "country": "Brazil",
+      "text": "Brazil's central bank launched Pix in the week of 19 November 2020. People pay by an alias or by scanning a QR code. By 15 November 2020, 71 million aliases were registered.",
+      "why": "A bank-run QR system reached a whole country.",
+      "sources": [
+        29
+      ]
+    },
+    {
+      "year": 2021,
+      "date": "1 July 2021",
+      "era": "everywhere",
+      "art": "earth",
+      "title": "The EU Digital COVID Certificate",
+      "who": "European Union",
+      "where": "Brussels, Belgium",
+      "country": "Belgium",
+      "text": "The certificate carried a digitally signed QR code that shows a vaccine, test or recovery. It applied from 1 July 2021 for 12 months and came in digital and paper form.",
+      "why": "A QR code with a digital signature, used across a whole continent.",
+      "box": "trust",
+      "sources": [
+        28
+      ]
+    },
+    {
+      "year": 2022,
+      "date": "13 February 2022",
+      "era": "everywhere",
+      "art": "tv",
+      "title": "A bouncing QR code airs at the Super Bowl",
+      "who": "Coinbase",
+      "where": "USA",
+      "country": "United States",
+      "text": "A minute-long ad showed only a square QR code bouncing across the screen. It led to a page offering $15 of Bitcoin. The app went down from the traffic.",
+      "why": "A QR code was the whole ad, and it worked.",
+      "sources": [
+        30
+      ]
+    },
+    {
+      "year": 2022,
+      "date": "May 2022",
+      "era": "everywhere",
+      "art": "pixels",
+      "title": "Rectangular Micro QR is standardised",
+      "who": "ISO and IEC",
+      "where": "Geneva, Switzerland",
+      "country": "Switzerland",
+      "text": "Wikipedia says that ISO/IEC 23941:2022 standardised the rectangular Micro QR (rMQR) in May 2022. rMQR is for tight, wide spaces.",
+      "why": "The code keeps changing to fit new spaces.",
+      "sources": [
+        9
+      ]
+    },
+    {
+      "year": 2023,
+      "date": "6 December 2023",
+      "era": "everywhere",
+      "art": "eye",
+      "key": true,
+      "title": "The FTC warns of QR scams",
+      "who": "US Federal Trade Commission",
+      "where": "Washington, DC, USA",
+      "country": "United States",
+      "text": "The FTC warned that scammers put their own QR codes over real ones and send codes by text or email. A fake page can steal logins. It tells people to check the web address before opening it.",
+      "why": "The risk is that a QR code hides where it leads.",
+      "box": "trust",
+      "sources": [
+        31,
+        34,
+        35
+      ]
+    },
+    {
+      "year": 2026,
+      "date": "January 2026",
+      "era": "everywhere",
+      "art": "eye",
+      "title": "The FBI warns of quishing",
+      "who": "FBI",
+      "where": "United States",
+      "country": "United States",
+      "text": "The Register reported an FBI advisory about North Korean group Kimsuky using QR codes in spear-phishing emails. Pages posed as Microsoft 365 or Okta sign-ins. The attack tricked people into using phones, which bypass some checks.",
+      "why": "QR phishing now has its own name, quishing.",
+      "box": "trust",
+      "sources": [
+        32
+      ]
+    }
+  ],
+  "firsts": [
+    {
+      "label": "First bar code patent granted",
+      "value": "1952",
+      "who": "Norman Joseph Woodland and Bernard Silver, USA"
+    },
+    {
+      "label": "First product scanned with a UPC",
+      "value": "26 June 1974",
+      "who": "Marsh supermarket, Troy, Ohio, USA"
+    },
+    {
+      "label": "QR Code announced",
+      "value": "1994",
+      "who": "Denso Wave, Japan"
+    },
+    {
+      "label": "First phone reported with a built-in QR reader",
+      "value": "August 2002",
+      "who": "Sharp J-SH09 for J-Phone, Japan"
+    },
+    {
+      "label": "First Japanese winners of the European Inventor Award",
+      "value": "2014",
+      "who": "The QR Code team, Denso Wave and Toyota Central R&D Labs"
+    }
+  ],
+  "people": [
+    {
+      "name": "Masahiro Hara",
+      "life": "b. 1957",
+      "role": "Engineer, led the QR Code team at Denso",
+      "from": "Japan",
+      "note": "He began the project in 1992 with a very small team and has said he wants many people to find new uses for the code."
+    },
+    {
+      "name": "Takayuki Nagaya",
+      "life": "",
+      "role": "Engineer, Toyota Central R&D Labs",
+      "from": "Japan",
+      "note": "Named with Hara, Watabe, Nojiri and Uchiyama as part of the award-winning team."
+    },
+    {
+      "name": "Motoaki Watabe",
+      "life": "",
+      "role": "Engineer, Denso Wave",
+      "from": "Japan",
+      "note": "One of the five named inventors on the 2014 European Inventor Award."
+    },
+    {
+      "name": "Ynjiun P. Wang",
+      "life": "",
+      "role": "Inventor of PDF417 at Symbol Technologies",
+      "from": "United States",
+      "note": "Devised the stacked code used on boarding passes and driver licences."
+    },
+    {
+      "name": "Norman Joseph Woodland",
+      "life": "1921 – 2012",
+      "role": "Inventor of the bar code",
+      "from": "United States",
+      "note": "He and Bernard Silver filed the 1949 bar code patent, and he later worked on the UPC at IBM."
+    },
+    {
+      "name": "Bernard Silver",
+      "life": "1924 – 1963",
+      "role": "Co-inventor of the bar code",
+      "from": "United States",
+      "note": "He asked the question that started the idea. He died in 1963, aged 38."
+    },
+    {
+      "name": "Irving S. Reed",
+      "life": "1923 – 2012",
+      "role": "Mathematician and engineer",
+      "from": "United States",
+      "note": "Co-invented the error-correcting codes that let QR codes survive damage."
+    },
+    {
+      "name": "Gustave Solomon",
+      "life": "1930 – 1996",
+      "role": "Mathematician",
+      "from": "United States",
+      "note": "Co-invented Reed-Solomon codes at MIT Lincoln Laboratory."
+    },
+    {
+      "name": "George Laurer",
+      "life": "1925 – 2019",
+      "role": "IBM engineer",
+      "from": "United States",
+      "note": "Designed the striped UPC bar code that IBM submitted in 1973."
+    },
+    {
+      "name": "David Allais",
+      "life": "b. 1933",
+      "role": "Engineer, Intermec",
+      "from": "United States",
+      "note": "Created Code 49 in 1987, an early stacked code."
+    }
+  ],
+  "series": [
+    {
+      "id": "numerals",
+      "title": "How many digits a code can hold",
+      "unit": "digits",
+      "log": true,
+      "after": "qr",
+      "caption": "From a dozen digits on a UPC to thousands in a QR code, and then the tiny Micro QR.",
+      "points": [
+        {
+          "year": 1974,
+          "value": 12,
+          "label": "UPC bar code: 12 digits"
+        },
+        {
+          "year": 1994,
+          "value": 1167,
+          "label": "QR Model 1 at its largest (version 14): 1,167 numerals"
+        },
+        {
+          "year": 2000,
+          "value": 7089,
+          "label": "QR Model 2 at version 40: 7,089 numerals"
+        },
+        {
+          "year": 2004,
+          "value": 35,
+          "label": "Micro QR M4 (largest Micro QR): 35 numerals"
+        }
+      ]
+    },
+    {
+      "id": "modules",
+      "title": "Size of the largest QR symbol",
+      "unit": "modules per side",
+      "log": false,
+      "after": "phone",
+      "caption": "Each step in version adds four modules to each side.",
+      "points": [
+        {
+          "year": 1994,
+          "value": 73,
+          "label": "Model 1, version 14: 73 modules per side"
+        },
+        {
+          "year": 2000,
+          "value": 177,
+          "label": "Model 2, version 40: 177 modules per side"
+        },
+        {
+          "year": 2004,
+          "value": 11,
+          "label": "Micro QR M1: 11 modules per side"
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "A QR code can hold 7,089 digits. A UPC bar code holds 12.",
+    "Version 1 is 21 by 21 modules. Version 40 is 177 by 177.",
+    "The word \"QR Code\" is a registered trademark of Denso Wave. The pattern itself is not covered by that registration.",
+    "A phone camera reads only up to about 271 bytes at version 10-L, per Denso Wave.",
+    "Level M error correction restores about 15% of a code. Level Q restores about 25%."
+  ],
+  "sources": [
+    {
+      "title": "Brief history of the QR Code",
+      "publisher": "DENSO WAVE",
+      "url": "https://www.qrcode.com/en/history/"
+    },
+    {
+      "title": "Standardization of the QR Code",
+      "publisher": "DENSO WAVE",
+      "url": "https://www.qrcode.com/en/about/standards.html"
+    },
+    {
+      "title": "QR Code Model 1 and Model 2",
+      "publisher": "DENSO WAVE",
+      "url": "https://www.qrcode.com/en/codes/model12.html"
+    },
+    {
+      "title": "Micro QR Code",
+      "publisher": "DENSO WAVE",
+      "url": "https://www.qrcode.com/en/codes/microqr.html"
+    },
+    {
+      "title": "Error correction feature",
+      "publisher": "DENSO WAVE",
+      "url": "https://www.qrcode.com/en/about/error_correction.html"
+    },
+    {
+      "title": "QR Code versions and symbol sizes",
+      "publisher": "DENSO WAVE",
+      "url": "https://www.qrcode.com/en/about/version.html"
+    },
+    {
+      "title": "QR Code FAQ",
+      "publisher": "DENSO WAVE",
+      "url": "https://www.qrcode.com/en/faq.html"
+    },
+    {
+      "title": "How a board game and skyscrapers inspired the development of the QR code",
+      "publisher": "IEEE Spectrum",
+      "url": "https://spectrum.ieee.org/how-a-board-game-and-skyscrapers-inspired-the-development-of-the-qr-code"
+    },
+    {
+      "title": "QR Code development team wins European Inventor Award",
+      "publisher": "DENSO Automotive / European Patent Office award",
+      "url": "https://www.denso-am.eu/news/20140617_qr-code-development-team-wins-european-inventor-award"
+    },
+    {
+      "title": "QR code",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/QR_code"
+    },
+    {
+      "title": "Masahiro Hara",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Masahiro_Hara"
+    },
+    {
+      "title": "US2612994A: Classifying apparatus and method",
+      "publisher": "Google Patents (USPTO record)",
+      "url": "https://patents.google.com/patent/US2612994A/en"
+    },
+    {
+      "title": "Bernard Silver",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bernard_Silver"
+    },
+    {
+      "title": "Norman Joseph Woodland",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Norman_Joseph_Woodland"
+    },
+    {
+      "title": "Reed–Solomon error correction",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction"
+    },
+    {
+      "title": "Gustave Solomon",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gustave_Solomon"
+    },
+    {
+      "title": "Irving S. Reed",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Irving_S._Reed"
+    },
+    {
+      "title": "The Universal Product Code (UPC)",
+      "publisher": "IBM",
+      "url": "https://www.ibm.com/history/upc"
+    },
+    {
+      "title": "The history of the UPC barcode and IBM's George Laurer",
+      "publisher": "History.com",
+      "url": "https://www.history.com/articles/upc-barcode-invention-ibm-laurer"
+    },
+    {
+      "title": "The first barcode scanner is used",
+      "publisher": "History.com",
+      "url": "https://www.history.com/this-day-in-history/barcode-scanner-invention-first-use"
+    },
+    {
+      "title": "George Laurer",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/George_Laurer"
+    },
+    {
+      "title": "David Allais",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/David_Allais"
+    },
+    {
+      "title": "PDF417",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/PDF417"
+    },
+    {
+      "title": "MaxiCode",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MaxiCode"
+    },
+    {
+      "title": "When did QR codes start on mobile phones? (August 2002)",
+      "publisher": "Eurotechnology Japan",
+      "url": "https://www.eurotechnology.com/2009/07/29/qr-code-start-august-2002/"
+    },
+    {
+      "title": "iPhone can scan QR codes directly in the Camera app on iOS 11",
+      "publisher": "MacRumors",
+      "url": "https://www.macrumors.com/2017/06/06/iphone-can-scan-qr-codes-ios-11/"
+    },
+    {
+      "title": "Google Lens",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Google_Lens"
+    },
+    {
+      "title": "TraceTogether and SafeEntry to be enhanced",
+      "publisher": "Ministry of Health, Singapore",
+      "url": "https://www.moh.gov.sg/newsroom/tracetogether-and-safeentry-to-be-enhanced-in-preparation-for-further-opening-of-the-economy/"
+    },
+    {
+      "title": "EU clears way for the EU Digital COVID Certificate",
+      "publisher": "European External Action Service",
+      "url": "https://www.eeas.europa.eu/delegations/japan/eu-clears-way-eu-digital-covid-certificate_en"
+    },
+    {
+      "title": "Brazil central bank launches instant payments system Pix",
+      "publisher": "Global Government Forum",
+      "url": "https://www.globalgovernmentforum.com/brazil-central-bank-launches-instant-payments-system-pix/"
+    },
+    {
+      "title": "Coinbase Super Bowl commercial crashes the app",
+      "publisher": "Sports Illustrated",
+      "url": "https://www.si.com/extra-mustard/2022/02/14/coinbase-qr-code-super-bowl-commerical-crashes-app"
+    },
+    {
+      "title": "Scammers hide harmful links in QR codes to steal your information",
+      "publisher": "US Federal Trade Commission",
+      "url": "https://consumer.ftc.gov/consumer-alerts/2023/12/scammers-hide-harmful-links-qr-codes-steal-your-information"
+    },
+    {
+      "title": "QR codes a powerful new phishing weapon in hands of Pyongyang cyberspies",
+      "publisher": "The Register",
+      "url": "https://www.theregister.com/2026/01/09/pyongyangs_cyberspies_are_turning_qr/"
+    },
+    {
+      "title": "The Codes of Modern Life",
+      "publisher": "PBS NOVA Next",
+      "url": "https://www.pbs.org/wgbh/nova/article/reed-solomon-codes/"
+    },
+    {
+      "title": "QR codes may be a gateway to identity theft, FTC warns",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2023/12/07/qr-codes-may-be-a-gateway-to-identity-theft-ftc-warns.html"
+    },
+    {
+      "title": "Scam alert: QR code on an unexpected package",
+      "publisher": "US Federal Trade Commission",
+      "url": "https://consumer.ftc.gov/consumer-alerts/2025/01/scam-alert-qr-code-unexpected-package"
+    },
+    {
+      "title": "Scan a QR code with your iPhone or iPad",
+      "publisher": "Apple Support",
+      "url": "https://support.apple.com/en-us/102680"
+    },
+    {
+      "title": "What is a QR Code? | QRcode.com",
+      "publisher": "DENSO WAVE",
+      "url": "https://www.qrcode.com/en/about/"
+    }
+  ]
+}
